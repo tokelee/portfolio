@@ -1,0 +1,107 @@
+import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
+import { Container } from "../../components/container.styled";
+import Navbar from "../../components/Navbar/Navbar";
+import { PaintGrey } from "../../components/tags/PaintGrey.styled";
+import AnimatedCircle from "../../components/AnimatedCircle/AnimatedCIrcle.component";
+import Blog from "../../components/Blog/blog";
+import Portfolio from "../../components/Portfolio/Portfolio";
+import Aos from "aos";
+import 'aos/dist/aos.css'
+
+export default function Dashboard() {
+  var i = 0;
+  const text = "ABDULLAH O DAUD.";
+  const speed = 200;
+
+  const typeWriter = () => {
+    if (i < text.length) {
+      document.getElementById("my-name").innerHTML += text.charAt(i);
+      i++;
+      setTimeout(typeWriter, speed);
+    }
+  };
+
+  useEffect(() => {
+    document.getElementById("my-name").innerHTML = "";
+    typeWriter();
+    Aos.init({duration:2000});
+  });
+
+  return (
+    <Container>
+      {/* NavBar Component */}
+      <Navbar />
+
+      {/* Dashboard Body */}
+      <p className="this-is">
+        <PaintGrey>&lt;p&gt;</PaintGrey> This is
+        <PaintGrey>&lt;/p&gt;</PaintGrey>
+      </p>
+      <div className="dashboard_content_flex">
+        <div className="my-name">
+          <h1>
+            <PaintGrey>&lt;h1&gt;</PaintGrey>
+            <br />
+            <span id="my-name"></span>
+            <br />
+            <PaintGrey>&lt;/h1&gt;</PaintGrey>
+          </h1>
+          <p style={{ fontSize: "smaller" }}>
+            <PaintGrey>&lt;p&gt;</PaintGrey> Enterpreneur and Software Developer
+            <PaintGrey>&lt;/p&gt;</PaintGrey>
+          </p>
+        </div>
+
+        <div className="animated-circle">
+          <AnimatedCircle />
+        </div>
+      </div>
+
+      {/* Portfolio Component */}
+      <Portfolio/>
+
+      
+      {/* Blog Component */}
+      <Blog/>
+
+      <div data-aos="fade-up" className="contact-me">
+        <h2 style={{textAlign:'center'}} className="">
+          <PaintGrey>&lt;h2&gt;</PaintGrey> Connect with me
+          <PaintGrey>&lt;/h2&gt;</PaintGrey>
+        </h2>
+
+        <div className="social-handles-top">
+          <Link to="/">
+            <div className="handle github small-text">
+              <PaintGrey>&lt;a&gt;</PaintGrey> Github
+              <PaintGrey>&lt;/a&gt;</PaintGrey>
+            </div>
+          </Link>
+
+          <Link to="/">
+            <div className="handle twitter small-text">
+              <PaintGrey>&lt;a&gt;</PaintGrey> Twitter
+              <PaintGrey>&lt;/a&gt;</PaintGrey>
+            </div>
+          </Link>
+        </div>
+
+        <div className="social-handles-bottom">
+          <Link to="/">
+            <div className="handle linked-in small-text">
+              <PaintGrey>&lt;a&gt;</PaintGrey> Linked In
+              <PaintGrey>&lt;/a&gt;</PaintGrey>
+            </div>
+          </Link>
+          <Link to="/">
+            <div className="handle instagram small-text">
+              <PaintGrey>&lt;a&gt;</PaintGrey> Instagram
+              <PaintGrey>&lt;/a&gt;</PaintGrey>
+            </div>
+          </Link>
+        </div>
+      </div>
+    </Container>
+  );
+}

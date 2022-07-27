@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  background-color: hsl(248, 67%, 5%);
+  color: white;
+  font-family: "Presario", Arial;
+
+}
+
+@font-face {
+  font-family: 'Presario';
+  src: local("Presario"), url("./assets/Fonts/Presario-text/Presario-Text.ttf") format("truetype");
+}
+
+.dashboard_content_flex{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  flex-wrap: wrap;
+  margin-top: -50px;
+}
+
+.my-name{
+  width: 30rem;
+  height: 20rem;
+  font-size: x-large;
+}
+
+@media (max-width: 900px) {
+  .my-name{
+    font-size: 1rem;
+    height: 12rem;
+  }
+
+  
+}
+
+.animated-circle{
+  position: relative;
+  width: 20rem;
+  height: 20rem;
+  margin-top: 50px;
+}
+
+.social-handles-top{
+  display: flex;
+  height: 150px;
+  justify-content: space-evenly;
+}
+
+.social-handles-bottom{
+  display: flex;
+  height: 150px;
+  justify-content: space-between;
+}
+
+.handle{
+  border: thin solid rgb(0, 255, 234);
+  height: 150px;
+  width: 10rem;
+  border-radius: 50%;
+  text-align: center;
+  transition: 440ms ease-in;
+} .handle:hover{
+  background-color: rgba(0, 255, 234, 0.1);
+  transition: 440ms ease-in;
+  border: none;
+  margin-top: -10px;
+}
+
+.social-handles-bottom a{
+  line-height: 9rem;
+}
+
+.social-handles-top a{
+  line-height: 9rem;
+}
+
+@media (max-width: 900px) {
+  .handle{
+    height: 100px;
+    width: 6rem;
+  }
+
+  .small-text{
+    font-size: 0.51rem;
+  }
+
+  .social-handles-bottom a{
+    line-height: 6.5rem;
+  }
+  
+  .social-handles-top a{
+    line-height: 6.5rem;
+  }
+}
