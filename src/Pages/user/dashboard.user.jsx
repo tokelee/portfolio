@@ -63,8 +63,8 @@ export default function Dashboard() {
       <Portfolio/>
 
       
-      {/* Blog Component */}
-      <Blog/>
+      {/* Blog Component
+      <Blog/> */}
 
       <div data-aos="fade-up" className="contact-me">
         <h2 style={{textAlign:'center'}} className="">
@@ -73,34 +73,34 @@ export default function Dashboard() {
         </h2>
 
         <div className="social-handles-top">
-          <Link to="/">
+          <a href="https://github.com/tokelee">
             <div className="handle github small-text">
               <PaintGrey>&lt;a&gt;</PaintGrey> Github
               <PaintGrey>&lt;/a&gt;</PaintGrey>
             </div>
-          </Link>
+          </a>
 
-          <Link to="/">
+          <a href="https://mobile.twitter.com/tokelee_">
             <div className="handle twitter small-text">
               <PaintGrey>&lt;a&gt;</PaintGrey> Twitter
               <PaintGrey>&lt;/a&gt;</PaintGrey>
             </div>
-          </Link>
+          </a>
         </div>
 
         <div className="social-handles-bottom">
-          <Link to="/">
+          <a href="https://www.linkedin.com/in/abdullah-omotoke-95a654139">
             <div className="handle linked-in small-text">
               <PaintGrey>&lt;a&gt;</PaintGrey> Linked In
               <PaintGrey>&lt;/a&gt;</PaintGrey>
             </div>
-          </Link>
-          <Link to="/">
+          </a>
+          <a href="https://www.instagram.com/toke.x/">
             <div className="handle instagram small-text">
               <PaintGrey>&lt;a&gt;</PaintGrey> Instagram
               <PaintGrey>&lt;/a&gt;</PaintGrey>
             </div>
-          </Link>
+          </a>
         </div>
       </div>
     </Container>
