@@ -23,6 +23,7 @@ export default function Dashboard() {
   };
 
   useEffect(() => {
+    document.title = 'Dashboard'
     document.getElementById("my-name").innerHTML = "";
     typeWriter();
     Aos.init({duration:2000});
@@ -48,7 +49,7 @@ export default function Dashboard() {
             <PaintGrey>&lt;/h1&gt;</PaintGrey>
           </h1>
           <p style={{ fontSize: "smaller" }}>
-            <PaintGrey>&lt;p&gt;</PaintGrey> Enterpreneur and Software Developer
+            <PaintGrey>&lt;p&gt;</PaintGrey>Physicist, Enterpreneur and Software Developer
             <PaintGrey>&lt;/p&gt;</PaintGrey>
           </p>
         </div>
