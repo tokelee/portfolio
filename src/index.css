@@ -83,6 +83,7 @@ body {
 
   .small-text{
     font-size: 0.51rem;
+    border: thin solid white;
   }
 
   .social-handles-bottom a{

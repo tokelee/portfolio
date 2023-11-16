@@ -11,7 +11,7 @@ import 'aos/dist/aos.css'
 
 export default function Dashboard() {
   var i = 0;
-  const text = "ABDULLAH O DAUD.";
+  const text = "THE CLEVER CODER.";
   const speed = 200;
 
   const typeWriter = () => {
