@@ -80,7 +80,7 @@ export default function Dashboard() {
             </div>
           </a>
 
-          <a href="https://mobile.twitter.com/tokelee_">
+          <a href="https://mobile.twitter.com/mrtokx">
             <div className="handle twitter small-text">
               <PaintGrey>&lt;a&gt;</PaintGrey> Twitter
               <PaintGrey>&lt;/a&gt;</PaintGrey>
@@ -95,7 +95,7 @@ export default function Dashboard() {
               <PaintGrey>&lt;/a&gt;</PaintGrey>
             </div>
           </a>
-          <a href="https://www.instagram.com/toke.x/">
+          <a href="https://www.instagram.com/mrtokx/">
             <div className="handle instagram small-text">
               <PaintGrey>&lt;a&gt;</PaintGrey> Instagram
               <PaintGrey>&lt;/a&gt;</PaintGrey>
