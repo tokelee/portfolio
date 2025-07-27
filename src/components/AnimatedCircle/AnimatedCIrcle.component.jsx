@@ -11,7 +11,7 @@ function AnimatedCircle() {
         
         <a className="cvhover" href="https://docs.google.com/document/d/1uJl_nBzmNHTVtw-MwRdnialM19DVVYWEndG4YtJa2Hk/edit?usp=sharing">
           <div className="face face3">
-            <p> &lt;a&gt; View CV &lt;/a&gt;</p>
+            <p> &lt;a&gt; Download CV &lt;/a&gt;</p>
 
             <div className="circled"></div>
           </div>
