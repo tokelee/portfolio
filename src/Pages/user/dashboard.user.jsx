@@ -1,10 +1,10 @@
-import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
+import { useEffect } from "react";
+// import { Link } from "react-router-dom";
 import { Container } from "../../components/container.styled";
 import Navbar from "../../components/Navbar/Navbar";
 import { PaintGrey } from "../../components/tags/PaintGrey.styled";
 import AnimatedCircle from "../../components/AnimatedCircle/AnimatedCIrcle.component";
-import Blog from "../../components/Blog/blog";
+// import Blog from "../../components/Blog/blog";
 import Portfolio from "../../components/Portfolio/Portfolio";
 import Aos from "aos";
 import 'aos/dist/aos.css'
@@ -73,14 +73,14 @@ export default function Dashboard() {
         </h2>
 
         <div className="social-handles-top">
-          <a href="https://github.com/tokelee">
+          <a target="_blank" rel="noopener noreferrer" href="https://github.com/tokelee">
             <div className="handle github small-text">
               <PaintGrey>&lt;a&gt;</PaintGrey> Github
               <PaintGrey>&lt;/a&gt;</PaintGrey>
             </div>
           </a>
 
-          <a href="https://mobile.twitter.com/mrtokx">
+          <a target="_blank" rel="noopener noreferrer" href="https://mobile.twitter.com/mrtokx">
             <div className="handle twitter small-text">
               <PaintGrey>&lt;a&gt;</PaintGrey> Twitter
               <PaintGrey>&lt;/a&gt;</PaintGrey>
@@ -89,13 +89,13 @@ export default function Dashboard() {
         </div>
 
         <div className="social-handles-bottom">
-          <a href="https://www.linkedin.com/in/abdullah-omotoke-95a654139">
+          <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/abdullah-omotoke-95a654139">
             <div className="handle linked-in small-text">
               <PaintGrey>&lt;a&gt;</PaintGrey> Linked In
               <PaintGrey>&lt;/a&gt;</PaintGrey>
             </div>
           </a>
-          <a href="https://www.instagram.com/mrtokx/">
+          <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/mrtokx/">
             <div className="handle instagram small-text">
               <PaintGrey>&lt;a&gt;</PaintGrey> Instagram
               <PaintGrey>&lt;/a&gt;</PaintGrey>
